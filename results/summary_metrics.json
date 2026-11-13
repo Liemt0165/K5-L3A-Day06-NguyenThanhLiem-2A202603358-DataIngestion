@@ -1,5 +1,6 @@
 {
-  "model": "Qwen/Qwen3-Embedding-8B",
+  "model": "Qwen3-Embedding-8B",
+  "provider_model_id": "Qwen/Qwen3-Embedding-8B",
   "dimensions": 4096,
   "performance": {
     "A": {

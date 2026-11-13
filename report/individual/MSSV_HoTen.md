@@ -20,7 +20,7 @@
   * Giới hạn: Chưa xử lý trích xuất hình vẽ sơ đồ (như Hình 3-7 HNSW, Hình 3-9 RRF), văn bản chỉ lấy phần text giải thích.
 
 * **Embedding model, Vector store, lệnh chạy và chi phí**:
-  * Embedding model: `Qwen/Qwen3-Embedding-8B` (8 tỷ tham số, vector 4096 chiều) cung cấp bởi DeepInfra API.
+  * Embedding model: `Qwen3-Embedding-8B` (8 tỷ tham số, vector 4096 chiều; provider DeepInfra nhận diện qua ID `Qwen/Qwen3-Embedding-8B`).
   * Vector store: `ChromaDB v1.5.9` (Persistent local storage, metric Cosine distance: `hnsw:space = cosine`).
   * Lệnh chạy tái lập: `.venv\Scripts\python.exe -m starter.src.run`.
   * Chi phí API: Khoảng 0.0003 USD (~10 đồng VNĐ) cho toàn bộ 20 câu hỏi và 3 chiến lược.
@@ -101,5 +101,5 @@
   * Hiện tượng lỗi font encoding PDF (`o...p`) gây nhiễu nhẹ cho các thuật toán so khớp chuỗi chính xác.
 
 * **Nếu làm lại hoặc mở rộng, cải tiến gì?**:
-  * Mở rộng kỹ thuật **Hybrid Retrieval**: Kết hợp dense vector của `Qwen3-8B` với sparse lexical search `BM25` để xử lý các câu hỏi chứa tên riêng/mã hiệu chính xác.
+  * Mở rộng kỹ thuật **Hybrid Retrieval**: Kết hợp dense vector của `Qwen3-Embedding-8B` với sparse lexical search `BM25` để xử lý các câu hỏi chứa tên riêng/mã hiệu chính xác.
   * Áp dụng **Cross-Encoder Re-ranker** (như `bge-reranker-large`) cho Top-10 trước khi lấy Top-3 để khắc phục triệt để lỗi của câu `q19`.
