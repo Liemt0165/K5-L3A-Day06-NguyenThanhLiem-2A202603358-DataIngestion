@@ -1,0 +1,230 @@
+[
+  {
+    "id": "q01",
+    "split": "dev",
+    "type": "truc_tiep",
+    "question": "Chương 3 giải quyết vấn đề cốt lõi nào của Agent sau khi cuộc trò chuyện kết thúc?",
+    "expected_answer": "Làm thế nào để Agent vẫn ghi nhớ người dùng và ghi nhớ kiến thức sau khi cuộc trò chuyện kết thúc.",
+    "gold_source_id": "ai-agents-chapter3",
+    "gold_page": 1,
+    "evidence_quote": "Chương này sẽ giải quyết một vấn đề khó khăn hơn: làm thế nào để Agent vẫn ghi nhớ người dùng và ghi nhớ kiến thức sau khi cuộc trò chuyện kết thúc.",
+    "filter": null
+  },
+  {
+    "id": "q02",
+    "split": "dev",
+    "type": "metadata_filter",
+    "question": "Theo phần bộ nhớ người dùng (section: user_memory), khung ba cấp độ đánh giá khả năng ghi nhớ bao gồm những gì?",
+    "expected_answer": "Ghi nhớ chính xác (từng từ), ghi nhớ ngữ nghĩa (hiểu ý nghĩa), và suy luận tích hợp (tổng hợp qua nhiều cuộc trò chuyện).",
+    "gold_source_id": "ai-agents-chapter3",
+    "gold_page": 2,
+    "evidence_quote": "3.1.1 Đánh giá khả năng ghi nhớ: khung ba cấp độ Trước khi bắt đầu thiết kế hệ thống bộ nhớ, trước tiên chúng ta phải trả lời câu hỏi: Loại hệ thống bộ nhớ nào được coi làotốtp?",
+    "filter": {
+      "section": "user_memory"
+    }
+  },
+  {
+    "id": "q03",
+    "split": "dev",
+    "type": "truc_tiep",
+    "question": "Bốn định dạng lưu trữ phổ biến cho bộ nhớ người dùng là những định dạng nào?",
+    "expected_answer": "Văn bản tự nhiên, cặp khóa-giá trị, đồ thị tri thức (triples) và biểu diễn vector.",
+    "gold_source_id": "ai-agents-chapter3",
+    "gold_page": 4,
+    "evidence_quote": "3.1.3 Bốn định dạng lưu trữ cho bộ nhớ người dùng Sau khi giải quyếtođặt ở đâupvà ođánh giá như thế nàop, câu hỏi tiếp theo làolàm thế nào để lưu trữp- cùng một thông tin người dùng có thể được biểu diễn bằng các mức độ chi tiết và cấu trúc khác nhau.",
+    "filter": null
+  },
+  {
+    "id": "q04",
+    "split": "dev",
+    "type": "metadata_filter",
+    "question": "Trong phần bộ nhớ người dùng (section: user_memory), bộ nhớ làm việc trong tâm lý học nhận thức tương đương với thành phần nào của Agent?",
+    "expected_answer": "Tương đương với cửa sổ ngữ cảnh (context window) của mô hình lớn.",
+    "gold_source_id": "ai-agents-chapter3",
+    "gold_page": 7,
+    "evidence_quote": "Bộ nhớ làm việc tương ứng với cửa sổ ngữ cảnh của Agent - không gian thông tin tạm thời được sử dụng để xử lý tác vụ hiện tại (trajectory là nội dung cốt lõi của bộ nhớ làm việc, nhưng bộ nhớ làm việc cũng có thể chứa thông tin được tải từ bộ nhớ dài hạn).",
+    "filter": {
+      "section": "user_memory"
+    }
+  },
+  {
+    "id": "q05",
+    "split": "dev",
+    "type": "truc_tiep",
+    "question": "Mục đích của việc giải mẫn cảm nhật ký (log de-identification) trong bảo vệ quyền riêng tư bộ nhớ là gì?",
+    "expected_answer": "Loại bỏ hoặc che giấu thông tin nhận dạng cá nhân (PII) trước khi đưa vào bộ nhớ lâu dài.",
+    "gold_source_id": "ai-agents-chapter3",
+    "gold_page": 11,
+    "evidence_quote": "3.1.8 Bảo vệ quyền riêng tư: Giải mẫn cảm nhật ký Khi xây dựng hệ thống bộ nhớ người dùng, thách thức cốt lõi là cho phép Agent tận dụng thông tin người dùng để cung cấp các dịch vụ được cá nhân hóa mà không để lộ dữ liệu nhạy cảm ra ngữ cảnh và nhật ký hệ thống của LLM.",
+    "filter": null
+  },
+  {
+    "id": "q06",
+    "split": "dev",
+    "type": "truc_tiep",
+    "question": "Mục tiêu cơ bản của việc xây dựng quy trình RAG cho Agent là gì?",
+    "expected_answer": "Mở rộng khả năng tiếp thu kiến thức ngoài dữ liệu huấn luyện thông qua truy xuất ngoài.",
+    "gold_source_id": "ai-agents-chapter3",
+    "gold_page": 12,
+    "evidence_quote": "3.2 Thông tin cơ bản về RAG: Xây dựng quy trình tiếp thu kiến thức cho Agent cốt lõi mà công nghệ RAG hướng tới giải quyết.",
+    "filter": null
+  },
+  {
+    "id": "q07",
+    "split": "dev",
+    "type": "truc_tiep",
+    "question": "Tại sao phân đoạn tài liệu (Chunking) lại là bước then chốt quyết định hiệu quả của RAG?",
+    "expected_answer": "Vì kích thước chunk ảnh hưởng trực tiếp đến độ chính xác truy xuất và tính toàn vẹn của ngữ cảnh.",
+    "gold_source_id": "ai-agents-chapter3",
+    "gold_page": 13,
+    "evidence_quote": "Hình 3-5 Quy trình truy vấn RAG: truy xuất, nâng cao và tạo 3.2.1 Phân đoạn tài liệu (Chunking) Hình 3-5 cho thấy quy trình cốt lõi của RAG trong quá trình truy vấn: truy xuất, nâng cao và tạo.",
+    "filter": null
+  },
+  {
+    "id": "q08",
+    "split": "dev",
+    "type": "metadata_filter",
+    "question": "Theo phần kiến thức cơ bản RAG (section: rag_fundamentals), ưu điểm vượt trội của Dense Embedding so với từ vựng truyền thống là gì?",
+    "expected_answer": "Hiểu được ngữ nghĩa tương đồng ngay cả khi không dùng chung từ khóa.",
+    "gold_source_id": "ai-agents-chapter3",
+    "gold_page": 14,
+    "evidence_quote": "Nhúng dày đặc sử dụng phương pháp học sâu để ánh xạ văn bản vào không gian vectơ - nội dung tương tự về mặt ngữ nghĩa có khoảng cách vectơ gần.",
+    "filter": {
+      "section": "rag_fundamentals"
+    }
+  },
+  {
+    "id": "q09",
+    "split": "dev",
+    "type": "truc_tiep",
+    "question": "Bảng 3-2 so sánh hai thuật toán chỉ mục vector phổ biến nào theo các khía cạnh tốc độ và độ chính xác?",
+    "expected_answer": "So sánh hai thuật toán chỉ mục ANNOY và HNSW.",
+    "gold_source_id": "ai-agents-chapter3",
+    "gold_page": 16,
+    "evidence_quote": "Bảng 3-2 so sánh chúng theo năm khía cạnh về tốc độ xây dựng, mức sử dụng bộ nhớ, cập nhật gia tăng, độ chính xác của truy vấn và các tình huống áp dụng: Bảng 3-2 So sánh thuật toán chỉ số ANNOY và HNSW Tính năng ANNOY (dựa trên cây) HNSW (dựa trên biểu đồ) Tốc độ xây dựng Nhanh Chậm Sử dụng bộ nhớ Thấp Cao Cập nhật gia tăng Không được hỗ trợ (yêu cầu xây dựng lại hoàn chỉnh) Được hỗ trợ (nhưng nên định kỳ xây dựng lại sau khi chèn gia tăng dài hạn để duy trì độ chính xác truy vấn) Độ chính xác của truy vấn Cao Cực kỳ cao Các tình huống áp dụng Bộ dữ liệu tĩnh có dữ liệu không thay đổi thường xuyên Các kịch bản động yêu cầu lập chỉ mục thông tin mới theo thời gian thực Việc chọn chiến lược lập chỉ mục phù hợp cũng quan trọng như việc chọn mô hình nhúng.",
+    "filter": null
+  },
+  {
+    "id": "q10",
+    "split": "dev",
+    "type": "truc_tiep",
+    "question": "Tại sao tìm kiếm kết hợp (Hybrid Search) lại kết hợp cả nhúng dày đặc (dense) và nhúng thưa thớt (sparse)?",
+    "expected_answer": "Để tận dụng đồng thời khả năng hiểu ngữ nghĩa của Dense Embedding và khả năng khớp từ khóa chính xác của BM25.",
+    "gold_source_id": "ai-agents-chapter3",
+    "gold_page": 19,
+    "evidence_quote": "3.2.4 Tìm kiếm kết hợp: Nghệ thuật đỉnh cao của cả hai thế giới Cả hai phương pháp đều có điểm mù: tìm kiếm dày đặc hiểu ngữ nghĩa nhưng có thể bỏ sót từ khóa (tìm kiếm oHTTP-403pcó thể trả về thảo luận chung vềolỗi máy chủp), trong khi tìm kiếm thưa thớt khớp chính xác nhưng không thể đọc từ đồng nghĩa (tìm kiếmokittypkhông thể tìm thấy tài liệu chỉ viếtocatp).",
+    "filter": null
+  },
+  {
+    "id": "q11",
+    "split": "dev",
+    "type": "dieu_kien",
+    "question": "Khi áp dụng Reciprocal Rank Fusion (RRF) trong Hybrid Search, các danh sách xếp hạng được kết hợp dựa trên nguyên lý nào?",
+    "expected_answer": "Dựa trên thứ hạng nghịch đảo của từng kết quả trong các danh sách khác nhau.",
+    "gold_source_id": "ai-agents-chapter3",
+    "gold_page": 20,
+    "evidence_quote": "3.2 Thông tin cơ bản về RAG: Xây dựng quy trình tiếp thu kiến thức cho Agent Truy vấn của người dùng \"kitty behavior\" tìm kiếm dày đặc So khớp ngữ nghĩa: kitty ≈ cat doc3: \"feline habits and cat play...\" cos=0.87 doc7: \"cat grooming patterns...\" cos=0.82 doc1: \"pet care basics...\" cos=0.71 Truy xuất thưa thớt (BM25) Kết hợp chính xác: từ khóa \"kitty\" doc5: \"kitty litter training...\" BM25=8.4 doc9: \"kitty adoption guide...\" BM25=6.1 doc2: \"kitten health tips...\" BM25=3.2 result Sự kết hợp RRF·6→5 dây thần kinh Sắp xếp lại Tinh chỉnh bộ mã hóa chéo Phân loại cuối cùng Top-N Hình 3-9 Quy trình truy xuất và sắp xếp lại kết hợp Một quy trình truy xuất kết hợp điển hình gồm ba giai đoạn, mỗi giai đoạn đảm nhiệm một vai trò riêng và nối tiếp nhau.",
+    "filter": null
+  },
+  {
+    "id": "q12",
+    "split": "dev",
+    "type": "truc_tiep",
+    "question": "Mục tiêu của lập chỉ mục có cấu trúc (Structured Indexing) là gì?",
+    "expected_answer": "Chuyển từ truy xuất thông tin đơn thuần sang mô hình hóa kiến thức phân cấp hoặc đồ thị.",
+    "gold_source_id": "ai-agents-chapter3",
+    "gold_page": 23,
+    "evidence_quote": "3.3.1 Lập chỉ mục có cấu trúc: Từ truy xuất thông tin đến mô hình hóa kiến thức Ý tưởng của việc lập chỉ mục có cấu trúc là: trước khi lập chỉ mục, hãy sử dụng LLM để sắp xếp kiến thức - tổng hợp, trừu tượng hóa và thiết lập các liên kết.",
+    "filter": null
+  },
+  {
+    "id": "q13",
+    "split": "dev",
+    "type": "dien_dat_lai",
+    "question": "Mô hình hệ thống tập tin tổ chức kiến thức của Agent như thế nào?",
+    "expected_answer": "Tổ chức kiến thức theo cấu trúc cây thư mục và tệp tin để dễ dàng duyệt và quản lý.",
+    "gold_source_id": "ai-agents-chapter3",
+    "gold_page": 26,
+    "evidence_quote": "3.3.2 Mô hình hệ thống tập tin: tổ chức kiến thức với cấu trúc thư mục RAPTOR và GraphRAG đại diện cho hành trình khám phá tổ chức tri thức của cộng đồng học thuật, trong khiOpenViking, có nguồn mở bởi Bytedance Volcano Engine, đề xuất triết lý thứ ba:Mô hình hệ thống tệp.",
+    "filter": null
+  },
+  {
+    "id": "q14",
+    "split": "dev",
+    "type": "truc_tiep",
+    "question": "Cập nhật gia tăng (Incremental Update) cho cơ sở tri thức giúp giải quyết vấn đề gì?",
+    "expected_answer": "Cập nhật các mẩu thông tin mới mà không cần phải lập lại chỉ mục toàn bộ kho tài liệu.",
+    "gold_source_id": "ai-agents-chapter3",
+    "gold_page": 27,
+    "evidence_quote": "Vì vậy, một cơ chế cập nhật đầy đủ phải có đồng thời hai đường:cập nhật gia tăng do sự kiện kích hoạt và tái tổ chức toàn bộ theo chu kỳ .",
+    "filter": null
+  },
+  {
+    "id": "q15",
+    "split": "dev",
+    "type": "truc_tiep",
+    "question": "Sự chuyển đổi mô hình của RAG thông minh (Agentic RAG) là gì?",
+    "expected_answer": "Biến việc truy xuất kiến thức thành một công cụ hành động có phản hồi và lập kế hoạch.",
+    "gold_source_id": "ai-agents-chapter3",
+    "gold_page": 30,
+    "evidence_quote": "3.3.4 RAG thông minh: Sự chuyển đổi mô hình biến việc truy xuất kiến thức thành một công cụ Sau khi xây dựng nền tảng kiến thức mạnh mẽ cho Agent, câu hỏi cốt lõi tiếp theo là: Làm cách nào Agent có thể sử dụng nền tảng kiến thức này một cách thông minh và tự chủ?",
+    "filter": null
+  },
+  {
+    "id": "q16",
+    "split": "test",
+    "type": "truc_tiep",
+    "question": "Kỹ thuật truy xuất theo ngữ cảnh (Contextual Retrieval) giải quyết hạn chế gì của các chunk độc lập?",
+    "expected_answer": "Bổ sung ngữ cảnh toàn cục của tài liệu vào từng chunk riêng lẻ để chunk không bị thiếu bối cảnh.",
+    "gold_source_id": "ai-agents-chapter3",
+    "gold_page": 34,
+    "evidence_quote": "3.3.5 Mẹo RAG: Truy xuất theo ngữ cảnh Phân đoạn truyền thống (không có context) Doanh thu quý hai của công ty tăng 3%, Chủ yếu được thúc đẩy bởi các dòng sản phẩm mới.",
+    "filter": null
+  },
+  {
+    "id": "q17",
+    "split": "test",
+    "type": "metadata_filter",
+    "question": "Theo phần truy xuất nâng cao (section: advanced_retrieval), mục tiêu của trích xuất tri thức sâu là gì?",
+    "expected_answer": "Chuyển từ truy xuất thông tin bề mặt sang khám phá tri thức và mối quan hệ ẩn.",
+    "gold_source_id": "ai-agents-chapter3",
+    "gold_page": 36,
+    "evidence_quote": "3.3.6 Trích xuất tri thức sâu từ tập dữ liệu: từ truy xuất thông tin đến khám phá tri thức Các công nghệ RAG mà chúng ta đã thảo luận cho đến nay đều dựa trên tiền đề rằng kiến thức tồn tại ở dạng tài liệu phi cấu trúc hoặc bán cấu trúc.",
+    "filter": {
+      "section": "advanced_retrieval"
+    }
+  },
+  {
+    "id": "q18",
+    "split": "test",
+    "type": "truc_tiep",
+    "question": "Khám phá tiên phong về bộ nhớ đa phương thức mở rộng sang các dạng dữ liệu nào?",
+    "expected_answer": "Bao gồm hình ảnh, âm thanh và video bên cạnh văn bản truyền thống.",
+    "gold_source_id": "ai-agents-chapter3",
+    "gold_page": 38,
+    "evidence_quote": "3.3.7 Khám phá tiên phong: Bộ nhớ đa phương thức Diện mạo của một khuôn mặt hay âm sắc giọng nói của một người rất khó mô tả bằng chữ, nên các cơ chế bộ nhớ văn bản đã trình bày trước đó trong chương này không thể lưu trữ chúng.",
+    "filter": null
+  },
+  {
+    "id": "q19",
+    "split": "test",
+    "type": "dien_dat_lai",
+    "question": "Trong phần tóm tắt chương 3, hai thành phần bổ trợ cho nhau của hệ thống ghi nhớ là gì?",
+    "expected_answer": "Bộ nhớ người dùng cá nhân hóa và cơ sở kiến thức RAG bên ngoài.",
+    "gold_source_id": "ai-agents-chapter3",
+    "gold_page": 39,
+    "evidence_quote": "3.4 Tóm tắt chương này thức bằng chữ, nên chưa giải quyết được vấn đề có những thông tin đa phương thức rất khó diễn tả.",
+    "filter": null
+  },
+  {
+    "id": "q20",
+    "split": "test",
+    "type": "dieu_kien",
+    "question": "Câu hỏi tư duy số 1 ở cuối chương 3 yêu cầu giải quyết tình huống nào trong hệ thống bộ nhớ?",
+    "expected_answer": "Xử lý xung đột thông tin khi cùng một người dùng cung cấp thông tin mâu thuẫn trong các phiên khác nhau.",
+    "gold_source_id": "ai-agents-chapter3",
+    "gold_page": 40,
+    "evidence_quote": "★★ Trong hệ thống bộ nhớ người dùng, khi cùng một người dùng cung cấp thông tin xung đột trong các phiên khác nhau (chẳng hạn như đề cập đến các địa chỉ nhà khác nhau hai lần), hệ thống bộ nhớ nên xử lý xung đột này như thế nào?",
+    "filter": null
+  }
+]

@@ -1,0 +1,110 @@
+{
+  "model": "Qwen/Qwen3-Embedding-8B",
+  "dimensions": 4096,
+  "performance": {
+    "A": {
+      "chunk_count": 303,
+      "ingest_time_seconds": 28.79,
+      "total_chars": 142093
+    },
+    "B": {
+      "chunk_count": 184,
+      "ingest_time_seconds": 7.69,
+      "total_chars": 128982
+    },
+    "C": {
+      "chunk_count": 184,
+      "ingest_time_seconds": 0.3,
+      "total_chars": 128982
+    }
+  },
+  "metrics": {
+    "A": {
+      "dev": {
+        "total": 15,
+        "hit1_count": 6,
+        "hit1_ratio": "6/15",
+        "hit1_pct": 40.0,
+        "hit3_count": 8,
+        "hit3_ratio": "8/15",
+        "hit3_pct": 53.33
+      },
+      "test": {
+        "total": 5,
+        "hit1_count": 4,
+        "hit1_ratio": "4/5",
+        "hit1_pct": 80.0,
+        "hit3_count": 4,
+        "hit3_ratio": "4/5",
+        "hit3_pct": 80.0
+      },
+      "all": {
+        "total": 20,
+        "hit1_count": 10,
+        "hit1_ratio": "10/20",
+        "hit1_pct": 50.0,
+        "hit3_count": 12,
+        "hit3_ratio": "12/20",
+        "hit3_pct": 60.0
+      }
+    },
+    "B": {
+      "dev": {
+        "total": 15,
+        "hit1_count": 7,
+        "hit1_ratio": "7/15",
+        "hit1_pct": 46.67,
+        "hit3_count": 8,
+        "hit3_ratio": "8/15",
+        "hit3_pct": 53.33
+      },
+      "test": {
+        "total": 5,
+        "hit1_count": 3,
+        "hit1_ratio": "3/5",
+        "hit1_pct": 60.0,
+        "hit3_count": 4,
+        "hit3_ratio": "4/5",
+        "hit3_pct": 80.0
+      },
+      "all": {
+        "total": 20,
+        "hit1_count": 10,
+        "hit1_ratio": "10/20",
+        "hit1_pct": 50.0,
+        "hit3_count": 12,
+        "hit3_ratio": "12/20",
+        "hit3_pct": 60.0
+      }
+    },
+    "C": {
+      "dev": {
+        "total": 15,
+        "hit1_count": 7,
+        "hit1_ratio": "7/15",
+        "hit1_pct": 46.67,
+        "hit3_count": 8,
+        "hit3_ratio": "8/15",
+        "hit3_pct": 53.33
+      },
+      "test": {
+        "total": 5,
+        "hit1_count": 3,
+        "hit1_ratio": "3/5",
+        "hit1_pct": 60.0,
+        "hit3_count": 4,
+        "hit3_ratio": "4/5",
+        "hit3_pct": 80.0
+      },
+      "all": {
+        "total": 20,
+        "hit1_count": 10,
+        "hit1_ratio": "10/20",
+        "hit1_pct": 50.0,
+        "hit3_count": 12,
+        "hit3_ratio": "12/20",
+        "hit3_pct": 60.0
+      }
+    }
+  }
+}

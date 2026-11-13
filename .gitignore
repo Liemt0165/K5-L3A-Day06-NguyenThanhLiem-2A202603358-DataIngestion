@@ -1,10 +1,29 @@
+# Python artifacts
 __pycache__/
-.venv/
-.env
-*.pyc
-
-.env.*
-!.env.example
-.DS_Store
+*.py[cod]
+*$py.class
+*.so
 .pytest_cache/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Environment files and Secrets
+.env
+.env.*
+*.env
+!.env.example
+!starter/.env.example
+
+# Vector DB & Storage
+chroma_db/
 *.sqlite
+*.sqlite3
+
+# OS / Editor files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

@@ -1,0 +1,790 @@
+[
+  {
+    "question_id": "q01",
+    "split": "dev",
+    "question": "Chương 3 giải quyết vấn đề cốt lõi nào của Agent sau khi cuộc trò chuyện kết thúc?",
+    "gold_page": 1,
+    "gold_evidence": "Chương này sẽ giải quyết một vấn đề khó khăn hơn: làm thế nào để Agent vẫn ghi nhớ người dùng và ghi nhớ kiến thức sau khi cuộc trò chuyện kết thúc.",
+    "filter": null,
+    "hit_at_1": false,
+    "hit_at_3": false,
+    "hits": [
+      {
+        "rank": 1,
+        "chunk_id": "ai-agents-chapter3_p30_par_003",
+        "score": 0.5737,
+        "page": 30,
+        "section": "advanced_retrieval",
+        "is_hit": false,
+        "text_snippet": "n trong mộtcông\ncụ mà Agent có thể gọi bất kỳ lúc nào. Agent áp dụng chế độ ReAct (xem định nghĩa trong Chương 1) và dẫn\ndắt toàn bộ quá trình thông q..."
+      },
+      {
+        "rank": 2,
+        "chunk_id": "ai-agents-chapter3_p01_par_003",
+        "score": 0.5179,
+        "page": 1,
+        "section": "user_memory",
+        "is_hit": false,
+        "text_snippet": "bộ nhớ người dùng\nĐể một Agent phục vụ cá nhân hóa xuyên phiên, cần một tầng bộ nhớ người dùng bền vững. Nó không\nlưu từng câu hội thoại, mà dùng thêm..."
+      },
+      {
+        "rank": 3,
+        "chunk_id": "ai-agents-chapter3_p03_par_004",
+        "score": 0.5148,
+        "page": 3,
+        "section": "user_memory",
+        "is_hit": false,
+        "text_snippet": "g 50 vòng giao tiếp). Trong quá\ntrình đánh giá, Agent đã thử nghiệm được yêu cầu tạo bộ nhớ dựa trên phiên đầu tiên, sau đó sửa đổi bộ\nnhớ dựa trên bộ..."
+      }
+    ]
+  },
+  {
+    "question_id": "q02",
+    "split": "dev",
+    "question": "Theo phần bộ nhớ người dùng (section: user_memory), khung ba cấp độ đánh giá khả năng ghi nhớ bao gồm những gì?",
+    "gold_page": 2,
+    "gold_evidence": "3.1.1 Đánh giá khả năng ghi nhớ: khung ba cấp độ Trước khi bắt đầu thiết kế hệ thống bộ nhớ, trước tiên chúng ta phải trả lời câu hỏi: Loại hệ thống bộ nhớ nào được coi làotốtp?",
+    "filter": {
+      "section": "user_memory"
+    },
+    "hit_at_1": false,
+    "hit_at_3": true,
+    "hits": [
+      {
+        "rank": 1,
+        "chunk_id": "ai-agents-chapter3_p03_par_000",
+        "score": 0.7328,
+        "page": 3,
+        "section": "user_memory",
+        "is_hit": false,
+        "text_snippet": "3.1 Hệ thống bộ nhớ người dùng\nTrên cơ sở đó, chúng tôi đã thiết kế khung đánh giá ba cấp độ phù hợp hơn với kịch bản Agent, chia khả\nnăng bộ nhớ thàn..."
+      },
+      {
+        "rank": 2,
+        "chunk_id": "ai-agents-chapter3_p02_par_001",
+        "score": 0.6793,
+        "page": 2,
+        "section": "user_memory",
+        "is_hit": true,
+        "text_snippet": "ser has travel plans to Tokyo (recent activity)\nKết quả trích xuất phải thỏa đồng thời ba quy tắc:tính chọn lọc (bỏ các chi tiết ngắn hạn nhưotìm kiếm..."
+      },
+      {
+        "rank": 3,
+        "chunk_id": "ai-agents-chapter3_p04_par_000",
+        "score": 0.6391,
+        "page": 4,
+        "section": "user_memory",
+        "is_hit": false,
+        "text_snippet": "3.1 Hệ thống bộ nhớ người dùng\n3.1.2 Phân cấp bộ nhớ\nVới các tiêu chí đánh giá đã có, đã đến lúc chuyển sang thiết kế cụ thể. Thiết kế của hệ thống bộ..."
+      }
+    ]
+  },
+  {
+    "question_id": "q03",
+    "split": "dev",
+    "question": "Bốn định dạng lưu trữ phổ biến cho bộ nhớ người dùng là những định dạng nào?",
+    "gold_page": 4,
+    "gold_evidence": "3.1.3 Bốn định dạng lưu trữ cho bộ nhớ người dùng Sau khi giải quyếtođặt ở đâupvà ođánh giá như thế nàop, câu hỏi tiếp theo làolàm thế nào để lưu trữp- cùng một thông tin người dùng có thể được biểu diễn bằng các mức độ chi tiết và cấu trúc khác nhau.",
+    "filter": null,
+    "hit_at_1": false,
+    "hit_at_3": false,
+    "hits": [
+      {
+        "rank": 1,
+        "chunk_id": "ai-agents-chapter3_p08_par_002",
+        "score": 0.6126,
+        "page": 8,
+        "section": "user_memory",
+        "is_hit": false,
+        "text_snippet": "dạng lưu trữp)\nLưu trữ thế nào? Ghi chú đơn giản, Ghi chú nâng\ncao, Thẻ JSON, Thẻ JSON\nnâng cao\nCác loại nhận thức (phần này) Lưu trữ những gì? Trí nh..."
+      },
+      {
+        "rank": 2,
+        "chunk_id": "ai-agents-chapter3_p04_par_004",
+        "score": 0.554,
+        "page": 4,
+        "section": "user_memory",
+        "is_hit": false,
+        "text_snippet": "iểu diễn bằng các mức độ chi tiết và cấu trúc khác nhau.\nBốn định dạng lưu trữ lũy tiến sau đây thể hiện sự tiến triển của mức độ chi tiết của bộ nhớ ..."
+      },
+      {
+        "rank": 3,
+        "chunk_id": "ai-agents-chapter3_p08_par_003",
+        "score": 0.5422,
+        "page": 8,
+        "section": "user_memory",
+        "is_hit": false,
+        "text_snippet": "sự kiện hay quy trình).\n3.1.6 Trường hợp khung bộ nhớ\nCác định dạng lưu trữ và loại bộ nhớ được thảo luận trước đó cuối cùng sẽ được áp dụng vào việc ..."
+      }
+    ]
+  },
+  {
+    "question_id": "q04",
+    "split": "dev",
+    "question": "Trong phần bộ nhớ người dùng (section: user_memory), bộ nhớ làm việc trong tâm lý học nhận thức tương đương với thành phần nào của Agent?",
+    "gold_page": 7,
+    "gold_evidence": "Bộ nhớ làm việc tương ứng với cửa sổ ngữ cảnh của Agent - không gian thông tin tạm thời được sử dụng để xử lý tác vụ hiện tại (trajectory là nội dung cốt lõi của bộ nhớ làm việc, nhưng bộ nhớ làm việc cũng có thể chứa thông tin được tải từ bộ nhớ dài hạn).",
+    "filter": {
+      "section": "user_memory"
+    },
+    "hit_at_1": false,
+    "hit_at_3": false,
+    "hits": [
+      {
+        "rank": 1,
+        "chunk_id": "ai-agents-chapter3_p01_par_000",
+        "score": 0.7022,
+        "page": 1,
+        "section": "user_memory",
+        "is_hit": false,
+        "text_snippet": "Chương 3 Bộ nhớ người dùng và cơ sở kiến thức\nChương trước đề cập đến việc quản lý ngữ cảnh của một tương tác duy nhất. Chương này sẽ giải quyết\nmột v..."
+      },
+      {
+        "rank": 2,
+        "chunk_id": "ai-agents-chapter3_p08_par_000",
+        "score": 0.7009,
+        "page": 8,
+        "section": "user_memory",
+        "is_hit": false,
+        "text_snippet": "3.1 Hệ thống bộ nhớ người dùng\nsự tương ứng trực tiếp trong bộ nhớ Agent:\nTrí nhớ phân đoạn (Episodic Memory): Ký ức về các sự kiện và trải nghiệm cụ ..."
+      },
+      {
+        "rank": 3,
+        "chunk_id": "ai-agents-chapter3_p04_par_000",
+        "score": 0.6846,
+        "page": 4,
+        "section": "user_memory",
+        "is_hit": false,
+        "text_snippet": "3.1 Hệ thống bộ nhớ người dùng\n3.1.2 Phân cấp bộ nhớ\nVới các tiêu chí đánh giá đã có, đã đến lúc chuyển sang thiết kế cụ thể. Thiết kế của hệ thống bộ..."
+      }
+    ]
+  },
+  {
+    "question_id": "q05",
+    "split": "dev",
+    "question": "Mục đích của việc giải mẫn cảm nhật ký (log de-identification) trong bảo vệ quyền riêng tư bộ nhớ là gì?",
+    "gold_page": 11,
+    "gold_evidence": "3.1.8 Bảo vệ quyền riêng tư: Giải mẫn cảm nhật ký Khi xây dựng hệ thống bộ nhớ người dùng, thách thức cốt lõi là cho phép Agent tận dụng thông tin người dùng để cung cấp các dịch vụ được cá nhân hóa mà không để lộ dữ liệu nhạy cảm ra ngữ cảnh và nhật ký hệ thống của LLM.",
+    "filter": null,
+    "hit_at_1": true,
+    "hit_at_3": true,
+    "hits": [
+      {
+        "rank": 1,
+        "chunk_id": "ai-agents-chapter3_p11_par_002",
+        "score": 0.5783,
+        "page": 11,
+        "section": "user_memory",
+        "is_hit": true,
+        "text_snippet": "ừu tượng hóa và khái quát hóa⚶trích xuất các quy tắc chung từ bộ nhớ tình huống\ncụ thể và chuyển chúng thành bộ nhớ ngữ nghĩa hoặc thủ tục. Ví dụ: từ ..."
+      },
+      {
+        "rank": 2,
+        "chunk_id": "ai-agents-chapter3_p11_par_003",
+        "score": 0.5426,
+        "page": 11,
+        "section": "user_memory",
+        "is_hit": false,
+        "text_snippet": "ông số kỹ thuật lớn\nhơn như qwen3:1.7b và qwen3:4b nếu cần) để đạt được khả năng phát hiện và giải mẫn cảm PII. Lý do chọn\ntriển khai cục bộ thay vì đ..."
+      },
+      {
+        "rank": 3,
+        "chunk_id": "ai-agents-chapter3_p11_par_001",
+        "score": 0.4427,
+        "page": 11,
+        "section": "user_memory",
+        "is_hit": false,
+        "text_snippet": "đáo của\nthông tin (thông tin lặp lại ít quan trọng hơn). Những bộ nhớ dưới ngưỡng được đánh dấu là có thể nén\nhoặc có thể xóa. Ví dụ: một bộ nhớ đã đư..."
+      }
+    ]
+  },
+  {
+    "question_id": "q06",
+    "split": "dev",
+    "question": "Mục tiêu cơ bản của việc xây dựng quy trình RAG cho Agent là gì?",
+    "gold_page": 12,
+    "gold_evidence": "3.2 Thông tin cơ bản về RAG: Xây dựng quy trình tiếp thu kiến thức cho Agent cốt lõi mà công nghệ RAG hướng tới giải quyết.",
+    "filter": null,
+    "hit_at_1": true,
+    "hit_at_3": true,
+    "hits": [
+      {
+        "rank": 1,
+        "chunk_id": "ai-agents-chapter3_p12_par_000",
+        "score": 0.6809,
+        "page": 12,
+        "section": "rag_fundamentals",
+        "is_hit": true,
+        "text_snippet": "3.2 Thông tin cơ bản về RAG: Xây dựng quy trình tiếp thu kiến thức cho Agent\ncốt lõi mà công nghệ RAG hướng tới giải quyết. Nó không chỉ phục vụ nền t..."
+      },
+      {
+        "rank": 2,
+        "chunk_id": "ai-agents-chapter3_p30_par_002",
+        "score": 0.6753,
+        "page": 30,
+        "section": "advanced_retrieval",
+        "is_hit": false,
+        "text_snippet": "hưng giới hạn khả năng trên\ncủa nó rất thấp vì về cơ bản nó chỉ là một quy trìnhotạo truy xuấtpthụ động và thiếu khả năng hiểu sâu,\nphân tách và khám ..."
+      },
+      {
+        "rank": 3,
+        "chunk_id": "ai-agents-chapter3_p32_par_000",
+        "score": 0.6175,
+        "page": 32,
+        "section": "advanced_retrieval",
+        "is_hit": false,
+        "text_snippet": "3.3 Ngoài văn bản phẳng: Tổ chức và truy xuất kiến thức\nAgent (vòng lặp ReAct)\n1 Thought (Suy\nnghĩ)\n2 Action (hành\nđộng)\n3 Observation (quan\nsát)\nLặp ..."
+      }
+    ]
+  },
+  {
+    "question_id": "q07",
+    "split": "dev",
+    "question": "Tại sao phân đoạn tài liệu (Chunking) lại là bước then chốt quyết định hiệu quả của RAG?",
+    "gold_page": 13,
+    "gold_evidence": "Hình 3-5 Quy trình truy vấn RAG: truy xuất, nâng cao và tạo 3.2.1 Phân đoạn tài liệu (Chunking) Hình 3-5 cho thấy quy trình cốt lõi của RAG trong quá trình truy vấn: truy xuất, nâng cao và tạo.",
+    "filter": null,
+    "hit_at_1": true,
+    "hit_at_3": true,
+    "hits": [
+      {
+        "rank": 1,
+        "chunk_id": "ai-agents-chapter3_p13_par_001",
+        "score": 0.7595,
+        "page": 13,
+        "section": "rag_fundamentals",
+        "is_hit": true,
+        "text_snippet": "ời hạn trên mười năm;\nNếu tình tiết tương đối nhẹ thì bị phạt tù có thời hạn từ ba năm đến mười năm.\nHình 3-5 Quy trình truy vấn RAG: truy xuất, nâng ..."
+      },
+      {
+        "rank": 2,
+        "chunk_id": "ai-agents-chapter3_p34_par_002",
+        "score": 0.6553,
+        "page": 34,
+        "section": "advanced_retrieval",
+        "is_hit": false,
+        "text_snippet": "ắt hạn chế hiệu suất của hệ thống RAG. Đây là điềm báo trước của phầnoPhân\nđoạn tài liệup: các phương pháp phân đoạn tiêu chuẩn, dù có kích thước cố đ..."
+      },
+      {
+        "rank": 3,
+        "chunk_id": "ai-agents-chapter3_p13_par_002",
+        "score": 0.6522,
+        "page": 13,
+        "section": "rag_fundamentals",
+        "is_hit": false,
+        "text_snippet": "g dài thì việc nhúng để nắm bắt được\ncác điểm chính càng khó. Thứ hai, mục tiêu của việc truy xuất là chỉ đưa phần có liên quan vào ngữ cảnh. Nếu\nđoạn..."
+      }
+    ]
+  },
+  {
+    "question_id": "q08",
+    "split": "dev",
+    "question": "Theo phần kiến thức cơ bản RAG (section: rag_fundamentals), ưu điểm vượt trội của Dense Embedding so với từ vựng truyền thống là gì?",
+    "gold_page": 14,
+    "gold_evidence": "Nhúng dày đặc sử dụng phương pháp học sâu để ánh xạ văn bản vào không gian vectơ - nội dung tương tự về mặt ngữ nghĩa có khoảng cách vectơ gần.",
+    "filter": {
+      "section": "rag_fundamentals"
+    },
+    "hit_at_1": true,
+    "hit_at_3": true,
+    "hits": [
+      {
+        "rank": 1,
+        "chunk_id": "ai-agents-chapter3_p14_par_001",
+        "score": 0.6472,
+        "page": 14,
+        "section": "rag_fundamentals",
+        "is_hit": true,
+        "text_snippet": "quả\ncamp. Ý tưởng của việc nhúng là chuyển đổi từng từ hoặc câu thành một số chuỗi (được gọi làovectơp,\nchẳng hạn như [0,2, -0,5, 0,8,l]) và làm cho c..."
+      },
+      {
+        "rank": 2,
+        "chunk_id": "ai-agents-chapter3_p14_par_000",
+        "score": 0.636,
+        "page": 14,
+        "section": "rag_fundamentals",
+        "is_hit": false,
+        "text_snippet": "3.2 Thông tin cơ bản về RAG: Xây dựng quy trình tiếp thu kiến thức cho Agent\nĐiểm khởi đầu phổ biến trong thực tế là mỗi khối 256-1024 token, các khối..."
+      },
+      {
+        "rank": 3,
+        "chunk_id": "ai-agents-chapter3_p15_par_000",
+        "score": 0.6078,
+        "page": 15,
+        "section": "rag_fundamentals",
+        "is_hit": false,
+        "text_snippet": "3.2 Thông tin cơ bản về RAG: Xây dựng quy trình tiếp thu kiến thức cho Agent\nWord2Vec\n2013\nKích thước\n300\nVectơ từ tĩnh\nMối quan hệ\nđồng thời\nĐào tạo ..."
+      }
+    ]
+  },
+  {
+    "question_id": "q09",
+    "split": "dev",
+    "question": "Bảng 3-2 so sánh hai thuật toán chỉ mục vector phổ biến nào theo các khía cạnh tốc độ và độ chính xác?",
+    "gold_page": 16,
+    "gold_evidence": "Bảng 3-2 so sánh chúng theo năm khía cạnh về tốc độ xây dựng, mức sử dụng bộ nhớ, cập nhật gia tăng, độ chính xác của truy vấn và các tình huống áp dụng: Bảng 3-2 So sánh thuật toán chỉ số ANNOY và HNSW Tính năng ANNOY (dựa trên cây) HNSW (dựa trên biểu đồ) Tốc độ xây dựng Nhanh Chậm Sử dụng bộ nhớ Thấp Cao Cập nhật gia tăng Không được hỗ trợ (yêu cầu xây dựng lại hoàn chỉnh) Được hỗ trợ (nhưng nên định kỳ xây dựng lại sau khi chèn gia tăng dài hạn để duy trì độ chính xác truy vấn) Độ chính xác của truy vấn Cao Cực kỳ cao Các tình huống áp dụng Bộ dữ liệu tĩnh có dữ liệu không thay đổi thường xuyên Các kịch bản động yêu cầu lập chỉ mục thông tin mới theo thời gian thực Việc chọn chiến lược lập chỉ mục phù hợp cũng quan trọng như việc chọn mô hình nhúng.",
+    "filter": null,
+    "hit_at_1": false,
+    "hit_at_3": false,
+    "hits": [
+      {
+        "rank": 1,
+        "chunk_id": "ai-agents-chapter3_p16_par_000",
+        "score": 0.6015,
+        "page": 16,
+        "section": "rag_fundamentals",
+        "is_hit": false,
+        "text_snippet": "3.2 Thông tin cơ bản về RAG: Xây dựng quy trình tiếp thu kiến thức cho Agent\nLayer 2 (kết nối tầm xa thưa thớt)\nLayer 1 (mật độ trung bình)\nLayer 0 (n..."
+      },
+      {
+        "rank": 2,
+        "chunk_id": "ai-agents-chapter3_p15_par_003",
+        "score": 0.5801,
+        "page": 15,
+        "section": "rag_fundamentals",
+        "is_hit": false,
+        "text_snippet": "việc triển khai mà là sự so sánh: nó cung cấp hai\nphần phụ trợ có thể chuyển đổi, ANNOY và HNSW, cho phép bạn quan sát trực tiếp sự khác biệt trong\nth..."
+      },
+      {
+        "rank": 3,
+        "chunk_id": "ai-agents-chapter3_p16_par_001",
+        "score": 0.5607,
+        "page": 16,
+        "section": "rag_fundamentals",
+        "is_hit": false,
+        "text_snippet": "g lại sau khi chèn gia tăng dài hạn để\nduy trì độ chính xác truy vấn)\nĐộ chính xác\ncủa truy vấn\nCao Cực kỳ cao\nCác tình huống\náp dụng\nBộ dữ liệu tĩnh ..."
+      }
+    ]
+  },
+  {
+    "question_id": "q10",
+    "split": "dev",
+    "question": "Tại sao tìm kiếm kết hợp (Hybrid Search) lại kết hợp cả nhúng dày đặc (dense) và nhúng thưa thớt (sparse)?",
+    "gold_page": 19,
+    "gold_evidence": "3.2.4 Tìm kiếm kết hợp: Nghệ thuật đỉnh cao của cả hai thế giới Cả hai phương pháp đều có điểm mù: tìm kiếm dày đặc hiểu ngữ nghĩa nhưng có thể bỏ sót từ khóa (tìm kiếm oHTTP-403pcó thể trả về thảo luận chung vềolỗi máy chủp), trong khi tìm kiếm thưa thớt khớp chính xác nhưng không thể đọc từ đồng nghĩa (tìm kiếmokittypkhông thể tìm thấy tài liệu chỉ viếtocatp).",
+    "filter": null,
+    "hit_at_1": true,
+    "hit_at_3": true,
+    "hits": [
+      {
+        "rank": 1,
+        "chunk_id": "ai-agents-chapter3_p19_par_002",
+        "score": 0.7147,
+        "page": 19,
+        "section": "rag_fundamentals",
+        "is_hit": true,
+        "text_snippet": "các ví dụ so sánh cụ thể sẽ được để lại ở đó.\n3.2.4 Tìm kiếm kết hợp: Nghệ thuật đỉnh cao của cả hai thế giới\nCả hai phương pháp đều có điểm mù: tìm k..."
+      },
+      {
+        "rank": 2,
+        "chunk_id": "ai-agents-chapter3_p16_par_001",
+        "score": 0.5952,
+        "page": 16,
+        "section": "rag_fundamentals",
+        "is_hit": false,
+        "text_snippet": "g lại sau khi chèn gia tăng dài hạn để\nduy trì độ chính xác truy vấn)\nĐộ chính xác\ncủa truy vấn\nCao Cực kỳ cao\nCác tình huống\náp dụng\nBộ dữ liệu tĩnh ..."
+      },
+      {
+        "rank": 3,
+        "chunk_id": "ai-agents-chapter3_p19_par_001",
+        "score": 0.5632,
+        "page": 19,
+        "section": "rag_fundamentals",
+        "is_hit": false,
+        "text_snippet": "hơn so vớiomodelp(TF=5), nhưng\ndo giá trị IDF cao hơn (hiếm trong bộ sưu tập tài liệu) nên đóng góp của nó vào điểm doc_1 (2.15) vượt\nquá so vớiomodel..."
+      }
+    ]
+  },
+  {
+    "question_id": "q11",
+    "split": "dev",
+    "question": "Khi áp dụng Reciprocal Rank Fusion (RRF) trong Hybrid Search, các danh sách xếp hạng được kết hợp dựa trên nguyên lý nào?",
+    "gold_page": 20,
+    "gold_evidence": "3.2 Thông tin cơ bản về RAG: Xây dựng quy trình tiếp thu kiến thức cho Agent Truy vấn của người dùng \"kitty behavior\" tìm kiếm dày đặc So khớp ngữ nghĩa: kitty ≈ cat doc3: \"feline habits and cat play...\" cos=0.87 doc7: \"cat grooming patterns...\" cos=0.82 doc1: \"pet care basics...\" cos=0.71 Truy xuất thưa thớt (BM25) Kết hợp chính xác: từ khóa \"kitty\" doc5: \"kitty litter training...\" BM25=8.4 doc9: \"kitty adoption guide...\" BM25=6.1 doc2: \"kitten health tips...\" BM25=3.2 result Sự kết hợp RRF·6→5 dây thần kinh Sắp xếp lại Tinh chỉnh bộ mã hóa chéo Phân loại cuối cùng Top-N Hình 3-9 Quy trình truy xuất và sắp xếp lại kết hợp Một quy trình truy xuất kết hợp điển hình gồm ba giai đoạn, mỗi giai đoạn đảm nhiệm một vai trò riêng và nối tiếp nhau.",
+    "filter": null,
+    "hit_at_1": false,
+    "hit_at_3": false,
+    "hits": [
+      {
+        "rank": 1,
+        "chunk_id": "ai-agents-chapter3_p20_par_001",
+        "score": 0.7832,
+        "page": 20,
+        "section": "rag_fundamentals",
+        "is_hit": false,
+        "text_snippet": "ng thời gửi truy vấn đến bộ máy truy xuất dày đặc và\nthưa thớt; mỗi bên gọi về một tập tài liệu ứng viên.\nThứ hai là hợp nhất kết quả , kết hợp hai tậ..."
+      },
+      {
+        "rank": 2,
+        "chunk_id": "ai-agents-chapter3_p20_par_002",
+        "score": 0.6798,
+        "page": 20,
+        "section": "rag_fundamentals",
+        "is_hit": false,
+        "text_snippet": "ạng đầu. RRF đơn giản và vững chắc, nhưng\nnó chỉ dùng thông tin thứ hạng, loại bỏ tín hiệu mức độ liên quan phong phú trong các điểm số gốc.\nGiai đoạn..."
+      },
+      {
+        "rank": 3,
+        "chunk_id": "ai-agents-chapter3_p21_par_000",
+        "score": 0.5842,
+        "page": 21,
+        "section": "rag_fundamentals",
+        "is_hit": false,
+        "text_snippet": "3.2 Thông tin cơ bản về RAG: Xây dựng quy trình tiếp thu kiến thức cho Agent\nlại thường dùng nhưBAAI/bge-reranker-v2-m3 áp dụng kiến trúc này.\nLàm thế..."
+      }
+    ]
+  },
+  {
+    "question_id": "q12",
+    "split": "dev",
+    "question": "Mục tiêu của lập chỉ mục có cấu trúc (Structured Indexing) là gì?",
+    "gold_page": 23,
+    "gold_evidence": "3.3.1 Lập chỉ mục có cấu trúc: Từ truy xuất thông tin đến mô hình hóa kiến thức Ý tưởng của việc lập chỉ mục có cấu trúc là: trước khi lập chỉ mục, hãy sử dụng LLM để sắp xếp kiến thức - tổng hợp, trừu tượng hóa và thiết lập các liên kết.",
+    "filter": null,
+    "hit_at_1": true,
+    "hit_at_3": true,
+    "hits": [
+      {
+        "rank": 1,
+        "chunk_id": "ai-agents-chapter3_p23_par_002",
+        "score": 0.5341,
+        "page": 23,
+        "section": "advanced_retrieval",
+        "is_hit": true,
+        "text_snippet": "ể chủ động\ntinh chỉnh, trừu tượng hóa và cấu trúc kiến thức thôicô đọngo100 trường hợp riêng lẻpthành các bản tóm\ntắt thống kê và chắt lọcocác trường ..."
+      },
+      {
+        "rank": 2,
+        "chunk_id": "ai-agents-chapter3_p25_par_003",
+        "score": 0.5094,
+        "page": 25,
+        "section": "advanced_retrieval",
+        "is_hit": false,
+        "text_snippet": "ngữ\ntự nhiên hoàn chỉnh (bảo toàn tính toàn vẹn ngữ nghĩa), được bổ sung bằng siêu dữ liệu có cấu trúc để lập chỉ\nmục và truy xuất (có tính đến hiệu q..."
+      },
+      {
+        "rank": 3,
+        "chunk_id": "ai-agents-chapter3_p40_par_002",
+        "score": 0.4435,
+        "page": 40,
+        "section": "summary",
+        "is_hit": false,
+        "text_snippet": "cơ sở tri thức miền?\n6. ★ RAPTOR xây dựng chỉ mục dạng cây thông qua tóm tắt phân cấp từ dưới lên và GraphRAG\nxây dựng chỉ mục cấu trúc biểu đồ thông ..."
+      }
+    ]
+  },
+  {
+    "question_id": "q13",
+    "split": "dev",
+    "question": "Mô hình hệ thống tập tin tổ chức kiến thức của Agent như thế nào?",
+    "gold_page": 26,
+    "gold_evidence": "3.3.2 Mô hình hệ thống tập tin: tổ chức kiến thức với cấu trúc thư mục RAPTOR và GraphRAG đại diện cho hành trình khám phá tổ chức tri thức của cộng đồng học thuật, trong khiOpenViking, có nguồn mở bởi Bytedance Volcano Engine, đề xuất triết lý thứ ba:Mô hình hệ thống tệp.",
+    "filter": null,
+    "hit_at_1": false,
+    "hit_at_3": false,
+    "hits": [
+      {
+        "rank": 1,
+        "chunk_id": "ai-agents-chapter3_p32_par_000",
+        "score": 0.607,
+        "page": 32,
+        "section": "advanced_retrieval",
+        "is_hit": false,
+        "text_snippet": "3.3 Ngoài văn bản phẳng: Tổ chức và truy xuất kiến thức\nAgent (vòng lặp ReAct)\n1 Thought (Suy\nnghĩ)\n2 Action (hành\nđộng)\n3 Observation (quan\nsát)\nLặp ..."
+      },
+      {
+        "rank": 2,
+        "chunk_id": "ai-agents-chapter3_p26_par_002",
+        "score": 0.5855,
+        "page": 26,
+        "section": "advanced_retrieval",
+        "is_hit": false,
+        "text_snippet": "dạng thư mục và tệp trong hệ thống tệp ảo, với mỗi mục nhập có một\nURI duy nhất:\nviking://\n├── resources/ # Kiến thức bên ngoài: tài liệu, code base, ..."
+      },
+      {
+        "rank": 3,
+        "chunk_id": "ai-agents-chapter3_p27_par_002",
+        "score": 0.5854,
+        "page": 27,
+        "section": "advanced_retrieval",
+        "is_hit": false,
+        "text_snippet": "kiếm trong bộ sưu tập tài liệu nằm rải rác\nnày càng khó khăn hơn. Cách tiếp cận đúng là tổ chức cơ sở kiến thức giống như Wikipedia: mỗi mục nhập\ntrỏ ..."
+      }
+    ]
+  },
+  {
+    "question_id": "q14",
+    "split": "dev",
+    "question": "Cập nhật gia tăng (Incremental Update) cho cơ sở tri thức giúp giải quyết vấn đề gì?",
+    "gold_page": 27,
+    "gold_evidence": "Vì vậy, một cơ chế cập nhật đầy đủ phải có đồng thời hai đường:cập nhật gia tăng do sự kiện kích hoạt và tái tổ chức toàn bộ theo chu kỳ .",
+    "filter": null,
+    "hit_at_1": true,
+    "hit_at_3": true,
+    "hits": [
+      {
+        "rank": 1,
+        "chunk_id": "ai-agents-chapter3_p27_par_004",
+        "score": 0.7119,
+        "page": 27,
+        "section": "advanced_retrieval",
+        "is_hit": true,
+        "text_snippet": "nh kỳ lại khiến tri thức mới không thể có hiệu lực kịp\nthời. Vì vậy, một cơ chế cập nhật đầy đủ phải có đồng thời hai đường:cập nhật gia tăng do sự ki..."
+      },
+      {
+        "rank": 2,
+        "chunk_id": "ai-agents-chapter3_p29_par_000",
+        "score": 0.6839,
+        "page": 29,
+        "section": "advanced_retrieval",
+        "is_hit": false,
+        "text_snippet": "3.3 Ngoài văn bản phẳng: Tổ chức và truy xuất kiến thức\ntrực tuyến.\n3.3.3.2 Tái tổ chức định kỳ bộ nhớ người dùng và cơ sở tri thức\nƯu điểm của cập nh..."
+      },
+      {
+        "rank": 3,
+        "chunk_id": "ai-agents-chapter3_p27_par_003",
+        "score": 0.6298,
+        "page": 27,
+        "section": "advanced_retrieval",
+        "is_hit": false,
+        "text_snippet": "ong khi nhiều\nmô hình sẽ không chủ động thực hiện việc này và chỉ nối thêm các tệp một cách riêng biệt. Do đó, các yêu cầu\nphải được nêu rõ trong từ n..."
+      }
+    ]
+  },
+  {
+    "question_id": "q15",
+    "split": "dev",
+    "question": "Sự chuyển đổi mô hình của RAG thông minh (Agentic RAG) là gì?",
+    "gold_page": 30,
+    "gold_evidence": "3.3.4 RAG thông minh: Sự chuyển đổi mô hình biến việc truy xuất kiến thức thành một công cụ Sau khi xây dựng nền tảng kiến thức mạnh mẽ cho Agent, câu hỏi cốt lõi tiếp theo là: Làm cách nào Agent có thể sử dụng nền tảng kiến thức này một cách thông minh và tự chủ?",
+    "filter": null,
+    "hit_at_1": false,
+    "hit_at_3": false,
+    "hits": [
+      {
+        "rank": 1,
+        "chunk_id": "ai-agents-chapter3_p30_par_002",
+        "score": 0.7197,
+        "page": 30,
+        "section": "advanced_retrieval",
+        "is_hit": false,
+        "text_snippet": "hưng giới hạn khả năng trên\ncủa nó rất thấp vì về cơ bản nó chỉ là một quy trìnhotạo truy xuấtpthụ động và thiếu khả năng hiểu sâu,\nphân tách và khám ..."
+      },
+      {
+        "rank": 2,
+        "chunk_id": "ai-agents-chapter3_p31_par_000",
+        "score": 0.6714,
+        "page": 31,
+        "section": "advanced_retrieval",
+        "is_hit": false,
+        "text_snippet": "3.3 Ngoài văn bản phẳng: Tổ chức và truy xuất kiến thức\nCơ thể không thông minh RAG\nĐã sửa lỗi các bước trước, truy xuất\nmột lần\nTruy vấn của người dù..."
+      },
+      {
+        "rank": 3,
+        "chunk_id": "ai-agents-chapter3_p32_par_000",
+        "score": 0.6683,
+        "page": 32,
+        "section": "advanced_retrieval",
+        "is_hit": false,
+        "text_snippet": "3.3 Ngoài văn bản phẳng: Tổ chức và truy xuất kiến thức\nAgent (vòng lặp ReAct)\n1 Thought (Suy\nnghĩ)\n2 Action (hành\nđộng)\n3 Observation (quan\nsát)\nLặp ..."
+      }
+    ]
+  },
+  {
+    "question_id": "q16",
+    "split": "test",
+    "question": "Kỹ thuật truy xuất theo ngữ cảnh (Contextual Retrieval) giải quyết hạn chế gì của các chunk độc lập?",
+    "gold_page": 34,
+    "gold_evidence": "3.3.5 Mẹo RAG: Truy xuất theo ngữ cảnh Phân đoạn truyền thống (không có context) Doanh thu quý hai của công ty tăng 3%, Chủ yếu được thúc đẩy bởi các dòng sản phẩm mới.",
+    "filter": null,
+    "hit_at_1": true,
+    "hit_at_3": true,
+    "hits": [
+      {
+        "rank": 1,
+        "chunk_id": "ai-agents-chapter3_p34_par_000",
+        "score": 0.7759,
+        "page": 34,
+        "section": "advanced_retrieval",
+        "is_hit": true,
+        "text_snippet": "3.3 Ngoài văn bản phẳng: Tổ chức và truy xuất kiến thức\nhoặc gây nhầm lẫn cho người dùng. Để đạt được cấp độ 3 (dịch vụ chủ động) - khám phá các kết n..."
+      },
+      {
+        "rank": 2,
+        "chunk_id": "ai-agents-chapter3_p35_par_001",
+        "score": 0.704,
+        "page": 35,
+        "section": "advanced_retrieval",
+        "is_hit": false,
+        "text_snippet": "ngữ cảnh sẽ thêm các từ khóa khớp chính xác,\nphong phú (oACMEp, oQuý II năm 2025p). Đối với truy xuất dày đặc chẳng hạn như nhúng vectơ, tiền tố\nsẽ ch..."
+      },
+      {
+        "rank": 3,
+        "chunk_id": "ai-agents-chapter3_p35_par_004",
+        "score": 0.6971,
+        "page": 35,
+        "section": "advanced_retrieval",
+        "is_hit": false,
+        "text_snippet": "ng minh hơn, nhận biết ngữ\ncảnh là một quyết định kỹ thuật mang lại nhiều lợi ích khi xây dựng hệ thống RAG cấp sản xuất, chất\nlượng cao.\nViệc xác min..."
+      }
+    ]
+  },
+  {
+    "question_id": "q17",
+    "split": "test",
+    "question": "Theo phần truy xuất nâng cao (section: advanced_retrieval), mục tiêu của trích xuất tri thức sâu là gì?",
+    "gold_page": 36,
+    "gold_evidence": "3.3.6 Trích xuất tri thức sâu từ tập dữ liệu: từ truy xuất thông tin đến khám phá tri thức Các công nghệ RAG mà chúng ta đã thảo luận cho đến nay đều dựa trên tiền đề rằng kiến thức tồn tại ở dạng tài liệu phi cấu trúc hoặc bán cấu trúc.",
+    "filter": {
+      "section": "advanced_retrieval"
+    },
+    "hit_at_1": false,
+    "hit_at_3": true,
+    "hits": [
+      {
+        "rank": 1,
+        "chunk_id": "ai-agents-chapter3_p37_par_000",
+        "score": 0.5831,
+        "page": 37,
+        "section": "advanced_retrieval",
+        "is_hit": false,
+        "text_snippet": "3.3 Ngoài văn bản phẳng: Tổ chức và truy xuất kiến thức\nmột bác sĩ có thâm niên - đằng sau nó là sự tích lũy kinh nghiệm trong vô số trường hợp chứ kh..."
+      },
+      {
+        "rank": 2,
+        "chunk_id": "ai-agents-chapter3_p36_par_004",
+        "score": 0.576,
+        "page": 36,
+        "section": "advanced_retrieval",
+        "is_hit": true,
+        "text_snippet": "kết nối ẩn giữa các phiên do thiếu tầm nhìn toàn cục. Kiến trúc hai lớp kết hợp\ncả hai, lần đầu tiên cho phépodịch vụ chủ độngpđược triển khai trong t..."
+      },
+      {
+        "rank": 3,
+        "chunk_id": "ai-agents-chapter3_p38_par_000",
+        "score": 0.5675,
+        "page": 38,
+        "section": "advanced_retrieval",
+        "is_hit": false,
+        "text_snippet": "3.3 Ngoài văn bản phẳng: Tổ chức và truy xuất kiến thức\nTrích xuất kiến thức không sử dụng các mẫu dữ liệu cứng nhắc được xác định trước mà áp dụng ch..."
+      }
+    ]
+  },
+  {
+    "question_id": "q18",
+    "split": "test",
+    "question": "Khám phá tiên phong về bộ nhớ đa phương thức mở rộng sang các dạng dữ liệu nào?",
+    "gold_page": 38,
+    "gold_evidence": "3.3.7 Khám phá tiên phong: Bộ nhớ đa phương thức Diện mạo của một khuôn mặt hay âm sắc giọng nói của một người rất khó mô tả bằng chữ, nên các cơ chế bộ nhớ văn bản đã trình bày trước đó trong chương này không thể lưu trữ chúng.",
+    "filter": null,
+    "hit_at_1": true,
+    "hit_at_3": true,
+    "hits": [
+      {
+        "rank": 1,
+        "chunk_id": "ai-agents-chapter3_p38_par_004",
+        "score": 0.6307,
+        "page": 38,
+        "section": "advanced_retrieval",
+        "is_hit": true,
+        "text_snippet": "ủa một người rất khó mô tả bằng chữ, nên các cơ chế\nbộ nhớ văn bản đã trình bày trước đó trong chương này không thể lưu trữ chúng. Làm thế nào vượt qu..."
+      },
+      {
+        "rank": 2,
+        "chunk_id": "ai-agents-chapter3_p38_par_003",
+        "score": 0.5532,
+        "page": 38,
+        "section": "advanced_retrieval",
+        "is_hit": false,
+        "text_snippet": "trường hợp, Agent sử dụng mô hình này để đặt\ncác câu hỏi hướng dẫn cho người dùng một cách thông minh theo thứ tự tầm quan trọng để hoàn thành tất\ncả ..."
+      },
+      {
+        "rank": 3,
+        "chunk_id": "ai-agents-chapter3_p06_par_001",
+        "score": 0.5339,
+        "page": 6,
+        "section": "user_memory",
+        "is_hit": false,
+        "text_snippet": "ng sản xuất đều\náp dụng mô hình kết hợp - các loại thông tin khác nhau trong cùng một Agent sẽ có những đường dẫn khác\nnhau.\nThí nghiệm 3-2 ★★: Nghiên..."
+      }
+    ]
+  },
+  {
+    "question_id": "q19",
+    "split": "test",
+    "question": "Trong phần tóm tắt chương 3, hai thành phần bổ trợ cho nhau của hệ thống ghi nhớ là gì?",
+    "gold_page": 39,
+    "gold_evidence": "3.4 Tóm tắt chương này thức bằng chữ, nên chưa giải quyết được vấn đề có những thông tin đa phương thức rất khó diễn tả.",
+    "filter": null,
+    "hit_at_1": false,
+    "hit_at_3": false,
+    "hits": [
+      {
+        "rank": 1,
+        "chunk_id": "ai-agents-chapter3_p02_par_001",
+        "score": 0.551,
+        "page": 2,
+        "section": "user_memory",
+        "is_hit": false,
+        "text_snippet": "ser has travel plans to Tokyo (recent activity)\nKết quả trích xuất phải thỏa đồng thời ba quy tắc:tính chọn lọc (bỏ các chi tiết ngắn hạn nhưotìm kiếm..."
+      },
+      {
+        "rank": 2,
+        "chunk_id": "ai-agents-chapter3_p03_par_000",
+        "score": 0.5404,
+        "page": 3,
+        "section": "user_memory",
+        "is_hit": false,
+        "text_snippet": "3.1 Hệ thống bộ nhớ người dùng\nTrên cơ sở đó, chúng tôi đã thiết kế khung đánh giá ba cấp độ phù hợp hơn với kịch bản Agent, chia khả\nnăng bộ nhớ thàn..."
+      },
+      {
+        "rank": 3,
+        "chunk_id": "ai-agents-chapter3_p04_par_000",
+        "score": 0.5362,
+        "page": 4,
+        "section": "user_memory",
+        "is_hit": false,
+        "text_snippet": "3.1 Hệ thống bộ nhớ người dùng\n3.1.2 Phân cấp bộ nhớ\nVới các tiêu chí đánh giá đã có, đã đến lúc chuyển sang thiết kế cụ thể. Thiết kế của hệ thống bộ..."
+      }
+    ]
+  },
+  {
+    "question_id": "q20",
+    "split": "test",
+    "question": "Câu hỏi tư duy số 1 ở cuối chương 3 yêu cầu giải quyết tình huống nào trong hệ thống bộ nhớ?",
+    "gold_page": 40,
+    "gold_evidence": "★★ Trong hệ thống bộ nhớ người dùng, khi cùng một người dùng cung cấp thông tin xung đột trong các phiên khác nhau (chẳng hạn như đề cập đến các địa chỉ nhà khác nhau hai lần), hệ thống bộ nhớ nên xử lý xung đột này như thế nào?",
+    "filter": null,
+    "hit_at_1": true,
+    "hit_at_3": true,
+    "hits": [
+      {
+        "rank": 1,
+        "chunk_id": "ai-agents-chapter3_p40_par_000",
+        "score": 0.5914,
+        "page": 40,
+        "section": "summary",
+        "is_hit": true,
+        "text_snippet": "3.4 Tóm tắt chương này\nSuy nghĩ sâu\nCâu hỏi tư duy\n1. ★★ Trong hệ thống bộ nhớ người dùng, khi cùng một người dùng cung cấp thông tin xung đột trong\nc..."
+      },
+      {
+        "rank": 2,
+        "chunk_id": "ai-agents-chapter3_p33_par_001",
+        "score": 0.5293,
+        "page": 33,
+        "section": "advanced_retrieval",
+        "is_hit": false,
+        "text_snippet": "còn sót lại ở nửa đầu chương này: khi\ntrí nhớ của người dùng tích lũy đến hàng nghìn mục, làm thế nào để truy xuất chính xác những mục có liên\nquan và..."
+      },
+      {
+        "rank": 3,
+        "chunk_id": "ai-agents-chapter3_p02_par_001",
+        "score": 0.5271,
+        "page": 2,
+        "section": "user_memory",
+        "is_hit": false,
+        "text_snippet": "ser has travel plans to Tokyo (recent activity)\nKết quả trích xuất phải thỏa đồng thời ba quy tắc:tính chọn lọc (bỏ các chi tiết ngắn hạn nhưotìm kiếm..."
+      }
+    ]
+  }
+]

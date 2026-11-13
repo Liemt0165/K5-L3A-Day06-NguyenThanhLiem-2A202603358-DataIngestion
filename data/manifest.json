@@ -1,0 +1,48 @@
+{
+  "source_id": "ai-agents-chapter3",
+  "title": "Chương 3: Bộ nhớ người dùng và cơ sở kiến thức",
+  "book_title": "Hiểu sâu về AI Agent: Nguyên lý thiết kế và thực hành kỹ thuật",
+  "source_path": "data/AI-Agents-Chapter3.pdf",
+  "original_book_path": "C:/Users/liemt/Desktop/AI-Agents-in-Depth-vi.pdf",
+  "original_book_pages": "Trang 106 đến 145 (Tổng 40 trang)",
+  "license_or_permission": "Tài liệu học thuật tiếng Việt phục vụ nghiên cứu và thực hành cá nhân",
+  "accessed_at": "2026-11-13",
+  "language": "vi",
+  "total_physical_pages": 40,
+  "counted_pages_count": 40,
+  "counted_pages": [
+    1, 2, 3, 4, 5, 6, 7, 8, 9, 10,
+    11, 12, 13, 14, 15, 16, 17, 18, 19, 20,
+    21, 22, 23, 24, 25, 26, 27, 28, 29, 30,
+    31, 32, 33, 34, 35, 36, 37, 38, 39, 40
+  ],
+  "excluded_pages_count": 0,
+  "excluded_pages": [],
+  "counting_rule": "Trích xuất trọn vẹn Chương 3 (từ trang 106 đến 145 của sách gốc), gồm 40 trang nội dung kỹ thuật đầy đủ về RAG và bộ nhớ Agent.",
+  "text_statistics": {
+    "total_clean_characters": 129035,
+    "average_characters_per_page": 3225,
+    "min_page_characters": 1785,
+    "max_page_characters": 4146
+  },
+  "normalization_pipeline": {
+    "unicode_normalization": "NFKC",
+    "whitespace_handling": "Thu gọn nhiều khoảng trắng liên tiếp và ký tự xuống dòng thừa",
+    "header_footer_filter": "Loại bỏ tiêu đề đầu trang lặp lại (running header) và số trang",
+    "formula_handling": "Giữ nguyên các thuật ngữ kỹ thuật và ký hiệu toán học"
+  },
+  "metadata_schema": {
+    "section": {
+      "type": "string",
+      "description": "Phân đoạn cấu trúc Chương 3 phục vụ cho Metadata Filter ở Cấu hình C",
+      "allowed_values": [
+        "user_memory",
+        "rag_fundamentals",
+        "advanced_retrieval",
+        "summary"
+      ]
+    },
+    "chapter": 3,
+    "topic": "ai_agent_memory_and_rag"
+  }
+}
